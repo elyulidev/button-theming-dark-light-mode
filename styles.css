@@ -1,0 +1,33 @@
+/* styles.css */
+body {
+	font-family: sans-serif;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+/* Tema Claro (por defecto) */
+body.light-theme {
+	background-color: #ffffff;
+	color: #333333;
+}
+
+/* Tema Oscuro */
+body.dark-theme {
+	background-color: #333333;
+	color: #ffffff;
+}
+
+#theme-toggle {
+	padding: 10px 20px;
+	border: 1px solid #333;
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+/* Estilos del botón en tema oscuro para que sea visible */
+.dark-theme #theme-toggle {
+	background-color: #555;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
